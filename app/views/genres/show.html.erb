@@ -1,0 +1,4 @@
+<h3> <%= @genre.name %></h3>
+<br>
+<br>
+<div> <%= link_to("Edit #{@genre.name}", edit_genre_path(@genre)) %> <%= link_to("Back to all Genres", genres_path) %> </div>

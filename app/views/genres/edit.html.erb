@@ -1,0 +1,10 @@
+<h3> Edit <%=@genre.name %> </h3>
+
+<%= form_for (@genre) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br>
+  <br>
+  <%= f.submit %>
+<% end %>
+<br>
+<div> <%= link_to("Cancel Edit", genre_path(@genre)) %> <%= link_to("Back to all Genres", genres_path) %> </div>

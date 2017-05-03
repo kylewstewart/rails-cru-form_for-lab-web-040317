@@ -1,0 +1,13 @@
+<h3> Edit <%= @artist.name %> </h3>
+
+<%= form_for(@artist) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br>
+  <br>
+  <%= f.label :bio %>
+  <%= f.text_area :bio %> <br>
+  <br>
+  <%= f.submit %>
+<% end %>
+<br>
+<div> <%= link_to("Cancel Edit", artist_path(@artist)) %> <%= link_to("Back to all Artist", artists_path) %> </div>
