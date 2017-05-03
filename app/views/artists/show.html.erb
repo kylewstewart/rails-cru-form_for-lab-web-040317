@@ -1,6 +1,6 @@
-<h3> <%= @artist.name %></h3>
-
-<div> <h3> Bio: </h3> <%= @artist.bio %> </div>
+<h1> <%= @artist.name %> </h1>
+<p> <%= @artist.name %> bio: </p>
+<p> <%= @artist.bio %> </p>
 <br>
 <br>
 <div> <%= link_to("Edit #{@artist.name}", edit_artist_path(@artist)) %> <%= link_to("Back to all Artists", artists_path) %> </div>

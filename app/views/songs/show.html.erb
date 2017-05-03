@@ -1,5 +1,6 @@
-<h3> <%= @song.name %></h3>
+<h1> <%= @song.name %>  </h1>
 
-<br>
-<br>
-<div> <%= link_to("Edit #{@song.name}", edit_song_path(@song)) %> <%= link_to("Back to all Songs", songs_path) %> </div>
+<p> Artist: <%= link_to(@artist.name, artist_path(@artist)) %> </p>
+<p> Genre: <%= link_to(@genre.name, genre_path(@genre)) %> </p>
+<p> <%= link_to("Edit #{@song.name}", edit_song_path(@song)) %> </p>
+<p> <%= link_to("Back to all Songs", songs_path) %> </p>

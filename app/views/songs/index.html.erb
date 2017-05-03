@@ -1,7 +1,7 @@
 <h3> All Songs </h3>
 
 <% @songs.each do |song| %>
-  <div> Name: <%= link_to(song.name, song_path(song)) %> </div>
+  <p> Name: <%= link_to(song.name, song_path(song)) %> </p>
 <% end %>
 <br>
 <br>
